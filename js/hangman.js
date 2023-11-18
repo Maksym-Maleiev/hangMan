@@ -14,3 +14,5 @@ var answerArray = [];
 for (var i = 0; i < word.length; i++){
   answerArray[i] = "_";
 }
+
+var remainingLetter = word.length;
