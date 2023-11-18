@@ -15,10 +15,10 @@ for (var i = 0; i < word.length; i++){
   answerArray[i] = "_";
 }
 
-var remainingLetter = word.length;
+var remainingLetters = word.length;
 
 // Game cycle
-while (remainingLetter > 0) {
+while (remainingLetters > 0) {
   // Show the player their progress
   alert(answerArray.join(" "));
 
@@ -34,7 +34,7 @@ while (remainingLetter > 0) {
     for (var j = 0; j < word.length; j++){
       if (word[j] === guess) {
         answerArray[j] = guess;
-        remainingLetter--;
+        remainingLetters--;
       }
     }
   }
