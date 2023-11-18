@@ -23,5 +23,20 @@ while (remainingLetter > 0) {
   alert(answerArray.join(" "));
 
   // Take input from the player
-  var guess = prompt("Guess a letter, or click Cancel to stop playing.")
+  var guess = prompt("Guess a letter, or click Cancel to stop playing.");
+  if (guess === null) {
+    // We leave the game loop
+    break;
+  } else if (guess.length !== 1) {
+    alert("Please enter a single letter.");
+  } else {
+    // Update the state of the game using the "guess" variable
+    for (var j = 0; j < word.length; j++){
+      if (word[j] === guess) {
+        answerArray[j] = guess;
+        remainingLetter--;
+      }
+    }
+  }
+  // 
 }
