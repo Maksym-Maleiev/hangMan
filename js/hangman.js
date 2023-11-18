@@ -16,3 +16,12 @@ for (var i = 0; i < word.length; i++){
 }
 
 var remainingLetter = word.length;
+
+// Game cycle
+while (remainingLetter > 0) {
+  // Show the player their progress
+  alert(answerArray.join(" "));
+
+  // Take input from the player
+  var guess = prompt("Guess a letter, or click Cancel to stop playing.")
+}
