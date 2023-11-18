@@ -40,3 +40,7 @@ while (remainingLetter > 0) {
   }
   // End of game cycle
 }
+
+// We show the answer and welcome the player
+alert(answerArray.join(" "));
+alert("Good job! The answer was " + word);
