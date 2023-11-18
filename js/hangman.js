@@ -5,3 +5,6 @@ var words = [
   "amazing",
   "pancake"
 ];
+
+// Choose a random word
+var word = words[Math.floor(Math.random() * words.length)];
