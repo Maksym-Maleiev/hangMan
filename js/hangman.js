@@ -38,5 +38,5 @@ while (remainingLetter > 0) {
       }
     }
   }
-  // 
+  // End of game cycle
 }
