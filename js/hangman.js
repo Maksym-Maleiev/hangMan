@@ -22,13 +22,6 @@ for (var i = 0; i < word.length; i++){
 }
 var remainingLetters = word.length;
 
-//  Use toLowerCase
-  for (var h = 0; h < word.length; h++) {
-    if (guess === word[h].toUpperCase) {
-      word[h].toUpperCase = word[h].toLowerCase;
-    }
-  }
-
 // Game cycle
 while (remainingLetters > 0) {
   // Show the player their progress
@@ -41,6 +34,13 @@ while (remainingLetters > 0) {
     break;
   } else if (guess.length !== 1) {
     alert("Please enter a single letter.");
+  } else if (guess === word[h].toUpperCase) {
+//  Use toLowerCase
+  for (var h = 0; h < word.length; h++) {
+    if (guess === word[h].toUpperCase) {
+      word[h].toUpperCase = word[h].toLowerCase;
+    }
+  }
   } else {
     // Update the state of the game using the "guess" variable
     for (var j = 0; j < word.length; j++){
