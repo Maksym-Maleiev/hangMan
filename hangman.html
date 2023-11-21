@@ -8,49 +8,7 @@
 </head>
 
 <body>
-  <!-- <script src="./js/hangman.js"></script> -->
-  <script>
-    // Choose a random word
-    var word = words[Math.floor(Math.random() * words.length)];
-
-    // We set the array of answers
-    var answerArray = [];
-    for (var i = 0; i < word.length; i++) {
-      answerArray[i] = "_";
-    }
-    var remainingLetters = word.length;
-
-    // Game cycle
-    while (remainingLetters > 0) {
-      // Show the player their progress
-      alert(answerArray.join(" "));
-
-      // Take input from the player
-      var guess = prompt("Guess a letter, or click Cancel to stop playing.");
-      var guessTrying = 3;
-
-      if (guess === null) {
-        // We leave the game loop
-        break;
-      } else if (guess.length !== 1) {
-        alert("Please enter a single letter.");
-      } else {
-        guess = guess.toLowerCase();
-        // Update the state of the game using the "guess" variable
-        for (var j = 0; j < word.length; j++) {
-          if (word[j] === guess) {
-            answerArray[j] = guess;
-            remainingLetters--;
-          }
-        }
-      }
-      // End of game cycle
-    }
-
-    // We show the answer and welcome the player
-    alert(answerArray.join(" "));
-    alert("Good job! The answer was " + word);
-  </script>
+  <script src="./js/hangman.js"></script>
 </body>
 
 </html>
