@@ -20,8 +20,14 @@ var answerArray = [];
 for (var i = 0; i < word.length; i++){
   answerArray[i] = "_";
 }
-
 var remainingLetters = word.length;
+
+//  Use toLowerCase
+  for (var h = 0; h < word.length; h++) {
+    if (guess === word[h].toUpperCase) {
+      word[h].toUpperCase = word[h].toLowerCase;
+    }
+  }
 
 // Game cycle
 while (remainingLetters > 0) {
@@ -42,12 +48,6 @@ while (remainingLetters > 0) {
         answerArray[j] = guess;
         remainingLetters--;
       }
-    }
-  }
-  //  Use toLowerCase
-  for (var h = 0; h < word.length; h++) {
-    if (guess === word[h].toUpperCase) {
-      word[h].toUpperCase = word[h].toLowerCase;
     }
   }
   // End of game cycle
