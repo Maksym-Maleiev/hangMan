@@ -45,6 +45,11 @@ while (remainingLetters > 0) {
     }
   }
   // Use toLowerCase
+  for (var h = 0; h < word.length; h++) {
+    if (guess === word[h].toUpperCase) {
+      
+    }
+  }
   // End of game cycle
 }
 
