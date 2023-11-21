@@ -38,8 +38,8 @@ while (remainingLetters > 0) {
   } else if (guess === word.toUpperCase) {
 // Use toLowerCase
   for (var h = 0; h < word.length; h++) {
-    if (guess === word[h].toUpperCase) {
-      answerArray[h].toUpperCase = guess.toLowerCase;
+    if (word[h].toUpperCase === guess) {
+      word[h].toUpperCase = answerArray[h].toLowerCase;
     }
   }
   } else {
