@@ -29,6 +29,7 @@ while (remainingLetters > 0) {
 
   // Take input from the player
   var guess = prompt("Guess a letter, or click Cancel to stop playing.");
+  var guessTrying = 3;
 
   if (guess === null) {
     // We leave the game loop
