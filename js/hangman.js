@@ -4,7 +4,9 @@ var words = [
   "monkey",
   "amazing",
   "pancake",
-  "hogwarts"
+  "hogwarts",
+  "potion",
+  "alohomora"
 ];
 
 // Choose a random word
