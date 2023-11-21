@@ -35,7 +35,7 @@ while (remainingLetters > 0) {
     break;
   } else if (guess.length !== 1) {
     alert("Please enter a single letter.");
-  } else if (guess === answerArray[I]) {
+  } else if (guess === word[i].toUpperCase) {
     alert("Please use toLowerCase");
 // Use toLowerCase
   // for (var H = 0; H < word.length; H++) {
