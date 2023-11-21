@@ -44,6 +44,7 @@ while (remainingLetters > 0) {
       }
     }
   }
+  // Use toLowerCase
   // End of game cycle
 }
 
