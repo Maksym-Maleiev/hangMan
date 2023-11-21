@@ -3,7 +3,8 @@ var words = [
   "javascript",
   "monkey",
   "amazing",
-  "pancake"
+  "pancake",
+  "hogwarts"
 ];
 
 // Choose a random word
