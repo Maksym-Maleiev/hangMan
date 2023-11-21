@@ -22,6 +22,8 @@ for (var i = 0; i < word.length; i++){
 }
 var remainingLetters = word.length;
 
+var wordUpperCase = word[i].toUpperCase();
+
 // Game cycle
 while (remainingLetters > 0) {
   // Show the player their progress
