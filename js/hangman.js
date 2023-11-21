@@ -7,7 +7,9 @@ var words = [
   "hogwarts",
   "potion",
   "alohomora",
-  "magic"
+  "magic",
+  "ring",
+  "elf"
 ];
 
 // Choose a random word
