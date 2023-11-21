@@ -22,8 +22,6 @@ for (var i = 0; i < word.length; i++){
 }
 var remainingLetters = word.length;
 
-var wordUpperCase = word[i].toUpperCase();
-
 // Game cycle
 while (remainingLetters > 0) {
   // Show the player their progress
@@ -42,6 +40,8 @@ while (remainingLetters > 0) {
       if (word[j] === guess) {
         answerArray[j] = guess;
         remainingLetters--;
+      } else if (guess === word[j].toUpperCase()) {
+        answerArray[j] = word[j].toLowerCase();
       }
     }
   }
