@@ -37,7 +37,10 @@ while (remainingLetters > 0) {
   } else if (guess.length !== 1) {
     alert("Please enter a single letter.");
   } else if (guessTrying <= guess) {
-    alert("Game over!");
+    for (var guessTrying = 0; guessTrying < guess;) {
+      alert("Game over!");
+      break;
+    }
   } else {
     guess = guess.toLowerCase();
     // Update the state of the game using the "guess" variable
