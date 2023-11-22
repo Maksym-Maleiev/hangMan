@@ -24,7 +24,7 @@ var remainingLetters = word.length;
 var guessTrying = 3;
 
 // Game cycle
-while (remainingLetters > 0 && guessTrying <= 3) {
+while (remainingLetters > 0 && guessTrying > 0) {
   // Show the player their progress
   alert(answerArray.join(" "));
 
