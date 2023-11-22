@@ -21,15 +21,15 @@ for (var i = 0; i < word.length; i++){
   answerArray[i] = "_";
 }
 var remainingLetters = word.length;
+var guessTrying = 3;
 
 // Game cycle
-while (remainingLetters > 0) {
+while (remainingLetters > 0 && guessTrying < 3) {
   // Show the player their progress
   alert(answerArray.join(" "));
 
   // Take input from the player
   var guess = prompt("Guess a letter, or click Cancel to stop playing.");
-  var guessTrying = 3;
 
   if (guess === null) {
     // We leave the game loop
