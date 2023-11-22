@@ -36,9 +36,6 @@ while (remainingLetters > 0 && guessTrying > 0) {
     break;
   } else if (guess.length !== 1) {
     alert("Please enter a single letter.");
-  } else if (guessTrying > 3) {
-    alert("Game over");
-    break;
   } else {
     guess = guess.toLowerCase();
     // Update the state of the game using the "guess" variable
