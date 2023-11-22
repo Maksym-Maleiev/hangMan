@@ -24,7 +24,7 @@ var remainingLetters = word.length;
 var guessTrying = 12;
 
 // Game cycle
-while (remainingLetters > 0 && guessTrying > 0 && answerArray["_"]) {
+while (remainingLetters > 0 && guessTrying > 0 && answerArray) {
   // Show the player their progress
   alert(answerArray.join(" "));
 
@@ -37,6 +37,7 @@ while (remainingLetters > 0 && guessTrying > 0 && answerArray["_"]) {
   } else if (guess.length !== 1) {
     alert("Please enter a single letter.");
   } else {
+    answerArray[i]--;
     guessTrying--;
     guess = guess.toLowerCase();
     // Update the state of the game using the "guess" variable
