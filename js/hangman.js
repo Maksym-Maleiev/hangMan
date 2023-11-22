@@ -29,14 +29,15 @@ while (remainingLetters > 0) {
 
   // Take input from the player
   var guess = prompt("Guess a letter, or click Cancel to stop playing.");
-  var guessTrying = guess < 3;
+  var guessTrying = 3;
+  var allowed = (guessTrying <= 3) && (guess === true);
 
   if (guess === null) {
     // We leave the game loop
     break;
   } else if (guess.length !== 1) {
     alert("Please enter a single letter.");
-  } else if (guess > guessTrying) {
+  } else if (guess < guessTrying) {
     alert("Game over!");
     break;
   } else {
