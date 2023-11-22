@@ -41,7 +41,7 @@ while (remainingLetters > 0 && guessTrying > 0) {
     guess = guess.toLowerCase();
     // Update the state of the game using the "guess" variable
     for (var j = 0; j < word.length; j++){
-      if (word[j] === guess && answerArray[j] === "_") {
+      if (word[j] === guess) {
         answerArray[j] = guess;
         remainingLetters--;
       }
