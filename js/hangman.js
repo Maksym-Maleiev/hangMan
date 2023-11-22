@@ -55,5 +55,5 @@ alert(answerArray.join(" "));
 if (guess > 0) {
   alert("Good job! The answer was " + word);
 } else {
-  alert("It's OK! Try on later!");
+  alert("It's OK! Try on later! The answer was " + word);
 }
