@@ -21,7 +21,7 @@ for (var i = 0; i < word.length; i++){
   answerArray[i] = "_";
 }
 var remainingLetters = word.length;
-var guessTrying = 3;
+var guessTrying = 12;
 
 // Game cycle
 while (remainingLetters > 0 && guessTrying > 0) {
